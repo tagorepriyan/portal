@@ -60,3 +60,10 @@ addEventListener("mousemove", (e) => {
     y1 = clientY;
   }
 });
+
+//
+document.addEventListener("dragstart", function (e) {
+    if (e.target.tagName === "IMG") {
+      e.preventDefault();
+    }
+  });
