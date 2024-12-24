@@ -17,64 +17,49 @@ body{
     -ms-user-select: none;    /* For IE/Edge */
     user-select: none; 
     background: linear-gradient(90deg, #ABCDEF 0%,#ABCDEF 100%);
+    overflow: hidden;
 }
 
-.logo{
-    position: relative;
-    height: 75px;
-    width: auto;
+
+.leftcoll{
+    float: left;
+    width: 40%;
+    height: 100%;
 }
 
-.navbar {
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 20px;
-    font-weight: 800;
-    font-size: 35px;
-    text-shadow: 2px 2px 4px #000000;
-    z-index: 2; /* Ensure it overlays other elements */
-    position: absolute;
-     /* Position it relative to the viewport */
-    left: 50%;
-    transform: translateX(-50%); /* Center it horizontally */
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    background-image: linear-gradient(120deg, rgba(255,255,255,0.5), rgba(0,0,0,0.2));
-    box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding:10px;
-    text-align: left;
-    border-radius:0px 0px 15px 15px;
-    width: 100%;
+.rigthcoll{
+    float: left;
+    width: 60%;
 
 }
 
-.bgimg{
-    width: 100%;
+.main_img{
+    width: 60%;
     height: 100vh;
+    padding: 10px;
+    filter: brightness(80%);
     object-fit: cover;
+    border-radius: 15px;
+    position: relative;
 }
 
 .form{
     position: absolute;
+    padding: 35px 20px;
     height: auto !important;
-    width: 400px !important;
+    width: 400px;
     background-color: transparent;
     backdrop-filter: blur(10px);
     z-index: 2;
-    transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+/*    transform: translate(-50%,-50%);*/
+    margin-top: 10%;
+    margin-left: 5%;
+/*    left: 50%;*/
     border-radius: 15px;
-    padding: 50px 35px;
     text-align: center;
     color: white;
-    
-    background: -webkit-linear-gradient(to right, #267871, #136a8a);
     background: linear-gradient(to right, #267871, #136a8a);
-    margin: auto;
-    box-shadow: 
-      0px 2px 10px rgba(0,0,0,0.2), 
-      0px 10px 20px rgba(0,0,0,0.3), 
-      0px 30px 60px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2), 0px 10px 20px rgba(0,0,0,0.3), 0px 30px 60px 1px rgba(0,0,0,0.5);
 }
 
 form h3 {
@@ -137,7 +122,7 @@ input:focus {
 #button {
     width: 7rem;
     margin-top: 30px !important; /* Ensure this rule is applied */
-    background-color: #9d9595;
+    background-color: #579fc8;
     color: #080710;
     padding: 15px 0;
     font-size: 18px;
@@ -148,49 +133,40 @@ input:focus {
 }
 
 #button:hover {
-    background-color: rgba(136, 59, 59, 0.47);
+    background-color: rgba(55, 129, 198, 0.47);
 }
 
 footer{
     text-align: center;
     color: #ffffff;
     background: linear-gradient(#136a8a, #136a8a);
-    padding: 5px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    z-index: 2;
+    z-index: 1;
 }
 
 p{
     padding-top: 5px;
     position: relative;
+    font-size: 10px;
 }
 
-
-
+/*navbar*/
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     top: 0;
+    text-align: center;
     position: fixed;
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* .5) !important;
-    padding-left: calc(var(--bs-gutter-x)* .5) !important;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    z-index: 2;;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
 
 /*star*/ 
 .star {
