@@ -13,6 +13,8 @@ body{
     -webkit-user-select: none; /* For Safari/Chrome */
     -ms-user-select: none;    /* For IE/Edge */
     user-select: none; 
+    background: rgb(0,84,180);
+    background: linear-gradient(159deg, rgba(0,84,180,1) 0%, rgba(64,224,208,1) 100%);
 }
 
 .heading {
